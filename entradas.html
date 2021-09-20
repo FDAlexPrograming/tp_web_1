@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/728f81b46c.js" crossorigin="anonymous"></script>
+	<title>Entradas | Fichajes.com</title>
+</head>
+<body class="entradas">
+
+	<header >
+		<a  href="index.html">fichajes.com</a>
+		<div >
+			<a class="btn_menu"><i class="fas fa-bars"></i></a>
+		</div>
+		<nav class="menu">
+			<ul class="navigation">
+				<li ><a  href ="index.html"  class="pagina">inicio</li></a> 
+				<li ><a  href ="suscripcion.html"  class="pagina">suscripcion</li></a> 
+				<li ><a  href ="tabla_posiciones.html"  class="pagina">posiciones</li></a> 
+				<li ><a  href ="entradas.html"  class="pagina">entradas</li></a>   
+			</ul>
+		</nav>
+	</header>
+
+	<section class="campo_medio">
+		<form class="form_boletos" name="form">
+			<h1 class="suscribete_title">adquiera su entrada aqui</h1>
+			<select class="form_input" name="equipo">
+				<option>San Lorenzo</option>
+				<option>Boca Junior</option>
+				<option>River Plate</option>
+				<option>Defensa y Justicia</option>
+				<option>Racing Club</option>
+				<option>Argentinos Juniors</option>
+				<option>Estudiantes</option>
+				<option>Olímpo</option>
+				<option>Aldosivi</option>
+				<option>Atlético Tucumán</option>
+				<option>Banfield</option>
+				<option>Huracán</option>
+				<option>Independiente</option>
+				<option>Newell's Old Boys</option>
+				<option>Talleres</option>
+			</select>
+
+			<input class="form_input cantidad" name="cantidad" type="number" placeholder="Cantidad">
+
+			<div class="info-pago">
+				<p  id="total_pagar_y_alert"></p>
+				<a href="#tabla"><i class="fas fa-cart-plus"></i></a>
+			</div>
+
+			<div class="container-spiner">
+				<div class="spiner"></div>
+			</div>
+			
+			<div class="buttons_container" >
+				<button name="btn-comprar" type="submit" class="btns"> Agregar</button>
+				<button id="btn-comprar-3" type="button"  class="btns"> Comprar x3</button>
+			</div>
+		</form>
+	</section>
+
+	<section>
+		<div class="actualizar-tabla">
+			<button  class="btn-tabla"><i class="fas fa-table"></i></button>
+		</div>
+
+		<div class="container-spiner">
+				<div id="multiuso">	</div>
+		</div>
+	</section>
+
+	<section  id="tabla"class="tabla_section">
+		<table >
+			<button id="filtro" class="btn-filtro"><i class="fas fa-filter" title="Filtrar"></i></button>
+			<thead>
+				<tr>
+					<th> equipo </th>
+					<th> cantidad </th>
+					<th> precio </th>
+				</tr>
+			</thead>
+			<tbody class="filas">
+			
+			</tbody>
+		</table>
+	</section>
+
+	<section class="btn_avanzar_retroceder">
+		<button id="btn-anterior" class="btns"> <i class="fas fa-angle-left"></i></button>
+		<button id="btn-siguiente" class="btns"> <i class="fas fa-angle-right"></i></button>
+	</section>
+
+	<footer>
+		<section >
+			<p class="contact_footer"> Contacto</p>
+			<p class="contacto_content"> +54 0 2923-518084</p>
+			<p class="contacto_content"><i class="fas fa-envelope-square "></i>Email:  info@fichajes.com</p>
+		</section>
+
+		<section>
+			<div class="icon_list">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-instagram-square" ></i>
+				<i class="fab fa-twitter-square"></i>
+            </div>
+		</section>
+		<p class="copyrigth">Copyright todos los derechos reservados</p>
+	</footer>
+	<script src="js/entradas.js"></script>
+	<script src="js/nav.js"></script>
+</body>
+</html>
